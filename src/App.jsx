@@ -5,6 +5,7 @@ import Login from "./componentes/Login";
 
 import { Administrador } from "./componentes/administrador";
 import { Cliente } from "./componentes/cliente";
+import App12 from "./DifuntosApp";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState(null);
@@ -30,7 +31,9 @@ function App() {
           <Routes>
          
               <Route path="/administrador/*" element={<Administrador />} />
+              
               <Route path="/cliente" element={<Cliente />} />
+              <Route path="/administrador/difuntos/*" element={<App12 />} />
    
 
           </Routes>                    
