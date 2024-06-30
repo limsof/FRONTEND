@@ -1,0 +1,197 @@
+/* Comentarios.css */
+
+.comentario-title{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.comentarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+
+    th, td {
+        padding: 5px;
+        text-align: left;
+        padding: .4rem .5rem;
+        color: #d2d2d2;
+    }
+    tr{
+        background-color: #0b231d;
+        transition: all .3s ease;
+        
+        &:hover {
+            background-color: #1b5445;
+        }
+        .td-description{
+            display: inline-block;
+            width: 80%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: .4rem .5rem;
+        }
+
+    }
+    tr{
+        &:nth-child(even) {
+            background-color: #12322b;
+        }
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+
+    td input {
+        font-size: 1.01em;
+        width: 80%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.td-select{
+    position: relative;
+    width: 5rem;
+
+    select{
+        padding: .5rem 0rem;
+        border: 1px solid #0f5c38;
+        cursor: pointer;
+        option{
+            background-color: #1c4e10;
+            
+        }
+
+    }
+}
+
+.selector {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: -57%;
+    flex-direction: column;
+    background-color: #000;
+    z-index: 1;
+
+}
+
+table > tbody> tr> td> button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: #45a049;
+    }
+
+    &:last-child {
+        background-color: #f44336;
+
+        &:hover {
+            background-color: #da190b;
+        }
+    }
+}
+
+.dialog{
+    width: 700px;
+    height: 600px;
+    border-radius: 1rem;
+    border: 2px solid #8a8787;
+    box-shadow: 2px 2px 1rem #b5b2b2;
+    overflow: hidden;
+    background-color: #222;
+    color: #c2c2c2;
+
+    .dialog-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 1rem ;
+
+        .dialog-p{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .dialog-button{
+            background-color: #0000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dialog-svg{
+            color: red;
+            height: 2.8rem;
+            width: 2.8rem;
+        }
+    }
+
+    .dialog-form{
+        display: flex;
+        flex-direction: column;
+        align-items: start;       
+        justify-content: start;
+        padding: 0 2rem;
+
+        .dialog-label{
+            padding: 1rem 0;
+        }
+        .dialog-area{
+            font-size: 1.1em;
+            height: 70px;
+            width: 80%;
+            resize: none;
+            border-radius: 5px;
+            background-color: #222;
+            border: 1px solid #b8b4b4;
+            outline: none;
+            padding: .5rem 1rem;
+            
+            &:focus, &:hover{
+                border: 1px solid #e8e4e4;
+            }
+        }
+        .dialog-select{
+            font-size: 1.1em;
+            padding: .5rem .5rem;
+            background-color: #222;
+            border: 1px solid #b8b4b4;
+            border-radius: 5px;
+        }
+        .dialog-save{
+            margin: 2rem 0 0 0;
+            padding: .5rem 1.4rem;
+            border-radius: 5px;
+            align-self: center;
+            transform: scale(1);
+            background-color: #3ea32e;
+            color: #f5f5f5;
+            transition: all .3s ease;
+
+            &:hover{
+                transform: scale(1.1);
+                background-color: #46d430;
+                color: #fff;
+            }
+        }
+
+    }
+}
