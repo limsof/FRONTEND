@@ -3,6 +3,8 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { AdminUsuario } from './adminUsuario';
 import { AdminRoles } from './adminRoles';
 import { Comentarios } from './Comentarios';
+import App12 from '../DifuntosApp';
+import { TasksPage } from '../pages/TasksPage';
 
 export const Administrador = ({ userId }) => {
   return (
@@ -22,6 +24,9 @@ export const Administrador = ({ userId }) => {
             <li>
               <Link to="comentarios" className="block p-2 hover:bg-gray-700 rounded">Comentarios</Link>
             </li>
+            <li>
+              <Link to="/administrador/difuntos" className="block p-2 hover:bg-gray-700 rounded">Difuntos</Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -31,6 +36,7 @@ export const Administrador = ({ userId }) => {
           <Route path="usuario" element={<AdminUsuario />} />
           <Route path="roles" element={<AdminRoles />} />
           <Route path="comentarios" element={<Comentarios />} />
+          <Route path="difuntos" element={< App12/>} />
         </Routes>
       </div>
     </div>
