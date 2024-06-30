@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { AdminUsuario } from './adminUsuario';
 import { AdminRoles } from './adminRoles';
+import { Comentarios } from './Comentarios';
 
 export const Administrador = ({ userId }) => {
   return (
@@ -18,6 +19,9 @@ export const Administrador = ({ userId }) => {
             <li>
               <Link to="roles" className="block p-2 hover:bg-gray-700 rounded">Roles</Link>
             </li>
+            <li>
+              <Link to="comentarios" className="block p-2 hover:bg-gray-700 rounded">Comentarios</Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -26,6 +30,7 @@ export const Administrador = ({ userId }) => {
         <Route exact path="/" element={<AdminUsuario />} />
           <Route path="usuario" element={<AdminUsuario />} />
           <Route path="roles" element={<AdminRoles />} />
+          <Route path="comentarios" element={<Comentarios />} />
         </Routes>
       </div>
     </div>

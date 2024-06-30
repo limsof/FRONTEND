@@ -30,7 +30,7 @@ function App() {
           <Routes>
          
               <Route path="/administrador/*" element={<Administrador />} />
-              <Route path="/cliente" element={<Cliente />} />
+              <Route path="/cliente" element={<Cliente userId={userId} />} />
    
 
           </Routes>                    

@@ -1,0 +1,73 @@
+/* Feedback.css */
+
+.feedback {
+    .feedback-form {
+        margin: 1rem;
+        padding: 1rem;
+        max-width: 40vw;
+        margin: auto;
+        
+        .feedback-fieldset {
+            background-color: #000;
+            border: 2px solid #237860;
+            border-radius: 5px;
+            padding:0 1.4rem;
+
+            legend {
+                font-size: 1.5em;
+                margin-bottom: .9rem;
+                color: #2a8e72;
+                font-weight: bold;
+            }
+
+            .feedback-div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 6px 0;
+                
+            }
+
+            .feedback-label {
+                display: block;
+                font-weight: bold;
+                text-align: start;
+                color: #2a8e72;
+                padding: 0 0 5px 0;
+            }
+
+            .feedback-area {
+                width: 80%;
+                height: 110px;
+                margin-top: 5px;
+                padding: 15px;
+                outline: none;
+                border: 2px solid #237860;
+                border-radius: 5px;
+                font-size: 1.1em;
+                resize: none;
+                color: #e2e2e2;
+                overflow-y: auto;
+                &:focus{
+                    border: 2px solid #2c8c71;
+                }
+            }
+
+            .feedback-button {
+                display: flex;
+                margin: 1.3rem auto 1rem;
+                padding: .8rem 2rem;
+                border-radius: 5px;
+                background-color: #237860;
+                color: #c9c6c6;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #2b826a;
+                }
+            }
+        }
+    }
+}
