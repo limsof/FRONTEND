@@ -4,8 +4,9 @@ import Login from "./componentes/Login";
 
 
 import { Administrador } from "./componentes/administrador";
-import { Cliente } from "./componentes/cliente";
+
 import App12 from "./DifuntosApp";
+import Clientess from "./componentes/cliente";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState(null);
@@ -32,7 +33,7 @@ function App() {
          
               <Route path="/administrador/*" element={<Administrador />} />
               
-              <Route path="/cliente" element={<Cliente />} />
+              <Route path="/cliente/*" element={<Clientess />} />
               <Route path="/administrador/difuntos/*" element={<App12 />} />
    
 
