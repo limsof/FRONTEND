@@ -12,7 +12,7 @@ export const TipoSelect = ({value, onChange}) => {
 
             try {
                 const tiposResponse = await getAllTipos()
-    
+                console.log(tiposResponse)
                 setTipos(tiposResponse)
             } catch (error) {
                 console.error('Error al obtener los tipos de problemas:', error)
@@ -20,6 +20,7 @@ export const TipoSelect = ({value, onChange}) => {
         }
 
         fetchTipos()
+        
     }, [])
 
     return (
