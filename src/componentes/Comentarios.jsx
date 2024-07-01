@@ -157,7 +157,7 @@ export const Comentarios = () => {
                             <td className='td-select'>
                                 {comentario.Problem.estado}
                             </td>
-                            <td>
+                            <td className='td-buttons'>
                                 <button onClick={() => handleEditClick(comentario)}>Editar</button>
                                 <button onClick={() => handleRemoveClick(comentario.id)}>Eliminar</button>
                             </td>

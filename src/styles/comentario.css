@@ -10,7 +10,7 @@
 .comentarios-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px auto;
 
     th, td {
         padding: 5px;
@@ -72,6 +72,14 @@
         }
 
     }
+}
+
+.td-buttons{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
 }
 
 .selector {

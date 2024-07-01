@@ -21,7 +21,7 @@ export const Header = () => {
               <Link to="/cremation" className="text-white hover:text-gray-400">Cremación</Link>
             </li>
             <li>
-              <Link to="/memorials" className="text-white hover:text-gray-400">Feedback</Link>
+              <Link to="/cliente/feedback" className="text-white hover:text-gray-400">Feedback</Link>
             </li>
             <li>
               <Link to="/contact" className="text-white hover:text-gray-400">Contacto</Link>

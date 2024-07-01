@@ -6,8 +6,9 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { AboutPage } from "./acercaDe";
 import { ListadoDifuntos } from "./difuntos";
+import { ReporteProblemas } from "./ReporteProblemas";
 
-const Clientess = () => {
+const Clientess = ({userId}) => {
   return (
     <>
     <Header />
@@ -19,6 +20,7 @@ const Clientess = () => {
         <Route exact path="/" element={<CuerpoD />} />
         <Route path="/acerca" element={<AboutPage />} />
         <Route path="/listadodif" element={<ListadoDifuntos />} />
+        <Route path="/feedback" element={<ReporteProblemas userId={userId} />} />
 
       </Routes>
     </div>
