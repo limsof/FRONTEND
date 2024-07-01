@@ -21,6 +21,7 @@ export const AboutPage = () => {
         <p className="mb-4">-LIMBER MAMANI CANAZA</p>
         <p className="mb-4">-BERNARDO LIMA CARDENAS Y SRA. MARIBEL T.</p>
         <p className="mb-4">-JOHN LIMBER ILLIMANI CHOQUETA</p>
+        <p className="mb-4">-GERSON CLAROS HUANCA</p>
         </div>
         </div>
 
