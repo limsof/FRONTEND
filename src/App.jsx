@@ -32,8 +32,9 @@ function App() {
           <Routes>
          
               <Route path="/administrador/*" element={<Administrador />} />
-              
-              <Route path="/cliente/*" element={<Clientess />} />
+
+              <Route path="/cliente" element={<Cliente userId={userId} />} />
+
               <Route path="/administrador/difuntos/*" element={<App12 />} />
    
 
